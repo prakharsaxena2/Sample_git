@@ -1,0 +1,88 @@
+<!-- <p>
+  Welcome {{name}}
+  <a  routerLink="/login"  routerLinkActive="active">=>Log out</a>
+</p> -->
+<!-- <body>
+
+    <div class="row" >
+      <div class="col-md-4" *ngFor="let items of bikes" >
+        <div class="maincontainer">
+          <div class="card">
+            <a>
+              <img class="img-responsive" src={{items.url}} />
+            </a>
+          </div>
+          <div class="card-body">
+            <span class="card-title">{{items.name}}</span>
+            <div class="card-price">
+              <span>₹ {{items.price}}</span>
+            </div>
+         
+        </div>
+      </div>
+    </div>
+    </div>
+  </body> -->
+<button>bike</button>
+<button>car</button>
+<button>mobile</button>
+  <div *ngFor="let item of bikes">
+    <div class="card column">
+        <div  class="thumbnail"> 
+      <img src={{item.url}} alt="Avatar" style="width:auto; height:250px">
+      <div class="caption">
+      <div class="container">
+       
+        <h4><b>{{item.name}}</b></h4>
+        <p>{{item.price }}</p> 
+        <!-- <a ><i class="material-icons">favorite</i></a> -->
+        <hr width="100%">
+        <!-- <button type="submit" id={{item.id}} routerLink='/details/{{item.name}}'
+      class="learn_btn btn btn-success">view</button> -->
+      <button type="submit" id={{item.id}} (click)="gotoProductDetails(item)"
+      class="learn_btn btn btn-success">view</button>
+      </div>  
+    </div>
+      </div>
+    </div>
+  </div>
+  <div *ngFor="let item of cars">
+      <div class="card column">
+          <div  class="thumbnail"> 
+        <img src={{item.url}} alt="Avatar" style="width:auto; height:250px">
+        <div class="caption">
+        <div class="container">
+         
+          <h4><b>{{item.name}}</b></h4>
+          <p>{{item.price }}</p> 
+          <!-- <a ><i class="material-icons">favorite</i></a> -->
+          <hr width="100%">
+          <!-- <button type="submit" id={{item.id}} routerLink='/details/{{item.name}}'
+        class="learn_btn btn btn-success">view</button> -->
+        <button type="submit" id={{item.id}} (click)="gotoProductDetails(item)"
+        class="learn_btn btn btn-success">view</button>
+        </div>  
+      </div>
+        </div>
+      </div>
+    </div>
+    <div *ngFor="let item of mobiles">
+        <div class="card column">
+            <div  class="thumbnail"> 
+          <img src={{item.url}} alt="Avatar" style="width:auto; height:250px">
+          <div class="caption">
+          <div class="container">
+           
+            <h4><b>{{item.name}}</b></h4>
+            <p>{{item.price }}</p> 
+            <!-- <a ><i class="material-icons">favorite</i></a> -->
+            <hr width="100%">
+            <!-- <button type="submit" id={{item.id}} routerLink='/details/{{item.name}}'
+          class="learn_btn btn btn-success">view</button> -->
+          <button type="submit" id={{item.id}} (click)="gotoProductDetails(item)"
+          class="learn_btn btn btn-success">view</button>
+          </div>  
+        </div>
+          </div>
+        </div>
+      </div>

@@ -1,0 +1,27 @@
+
+
+		
+       <body>
+				<div class="container">
+				  <h2 id='heading'>Log In</h2>
+				  <form #loginform="ngForm" (ngSubmit)="onSubmit(loginform)">
+					<div class="form-group">
+					  <label for="email">Email:</label>
+					  <input type="email" class="form-control" name="email" ngModel  placeholder="Username">
+					</div>
+					<div class="form-group">
+					  <label for="pwd">Password:</label>
+					  <input type="password" class="form-control" name="password" ngModel  placeholder="Password">
+					</div>
+
+					<div class="form-group">
+					<button class="btn float-right login_btn" type="submit" value="Login" >Login</button>
+					</div>
+					</form>
+					
+				<span><p>New User ? <a routerLink="/Signup" routerLinkActive="active"> Sign Up</a></p></span>
+				
+				 
+				</div>
+				
+			</body>

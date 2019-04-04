@@ -1,0 +1,93 @@
+<app-header></app-header>
+  <body>
+      <div class="container">
+        <h2>Post Ad</h2>
+        <form [formGroup]="registrationForm" role="form">
+        <div class="form-group">
+            <label for="Name">Category:</label>
+            <input class="form-control" name="category" formControlName="category"
+            placeholder="Category">
+            <div *ngIf="f.category.errors && (f.category.touched||f.category.dirty)" class="alert alert-danger">
+                <p *ngIf="f.category.hasError('whitespace')">Please enter valid data</p>
+              <p *ngIf="f.category.errors.required">!!Category Required!!</p>
+          
+        </div>
+        </div>
+        <div class="form-group">
+            <label for="email">Id:</label>
+            <input class="form-control" name="id" formControlName="id"
+            placeholder="Id">
+            <div *ngIf="f.id.errors &&(f.id.touched || f.id.dirty)" class="alert alert-danger">
+                <p *ngIf="f.id.hasError('whitespace')">Please enter valid data</p>
+
+                <p *ngIf="f.id.errors.required">id required</p>
+          </div>
+        </div>
+        <div class="form-group">
+            <label for="Product Name">Product Name:</label>
+            <input  class="form-control" name="name" formControlName="name"
+            placeholder="Product Name">
+            <div *ngIf="f.name.errors&&(f.name.touched || f.name.dirty)" class="alert alert-danger">
+                <p *ngIf="f.name.hasError('whitespace')">Please enter valid data</p>
+                <p *ngIf="f.name.errors.required">Product name required</p>
+          </div>
+        </div>
+        <div class="form-group">
+            <label for="Email">Email:</label>
+            <input  class="form-control" name="owneremail" formControlName="owneremail"
+            placeholder="Email">
+            <div *ngIf="f.owneremail.errors&&(f.owneremail.touched || f.owneremail.dirty)" class="alert alert-danger">
+                <p *ngIf="f.owneremail.hasError('whitespace')">Please enter valid Email</p>
+                <p *ngIf="f.owneremail.errors.required">Email required!!</p>
+                <p *ngIf="f.owneremail.errors.email">!!Email Invalid!!</p>
+          </div>
+        </div>
+        <div class="form-group">
+            <label for="Owner Name">Owner Name:</label>
+            <input  class="form-control" name="ownername" formControlName="ownername"
+            placeholder="Owner Name">
+            <div *ngIf="f.ownername.errors &&(f.ownername.touched || f.ownername.dirty)" class="alert alert-danger">
+                <p *ngIf="f.ownername.hasError('whitespace')">Please enter valid Name</p>
+
+              <p *ngIf="f.ownername.errors.required">Ownername required</p>
+          </div>
+        </div>
+        <div class="form-group">
+            <label for="Owner Number">Phone:</label>
+            <input  class="form-control" name="ownerno" formControlName="ownerno"
+            placeholder="Phone">
+            <div *ngIf="f.ownerno.errors &&(f.ownerno.touched || f.ownerno.dirty)" class="alert alert-danger">
+                <p *ngIf="f.ownerno.hasError('whitespace')">Please enter valid Number</p>
+
+              <p *ngIf="f.ownerno.errors.required">Phone required</p>
+          </div>
+        </div>
+        <div class="form-group">
+            <label for="Price">Price:</label>
+            <input  class="form-control" name="price" formControlName="price"
+            placeholder="Price">
+            <div *ngIf="f.price.errors&&(f.price.touched || f.price.dirty)" class="alert alert-danger">
+                <p *ngIf="f.price.hasError('whitespace')">Please enter valid data</p>
+
+              <p *ngIf="f.price.errors.required">price required</p>
+          </div>
+        </div>
+        <div class="form-group">
+            <label for="Url">Url:</label>
+            <input  class="form-control" name="url" formControlName="url"
+            placeholder="Image Url">
+            <div *ngIf="f.url.errors&&(f.url.touched || f.url.dirty)" class="alert alert-danger">
+                <p *ngIf="f.url.hasError('whitespace')">Please enter valid Url</p>
+
+              <p *ngIf="f.url.errors.required">Image Url</p>
+          </div>
+        </div>
+
+        <div class="form-group">
+        <button class="btn float-right login_btn" [disabled]='!registrationForm.valid' (click)="onSubmit()" type="submit">Submit</button>
+        </div> 
+        </form>
+       
+      </div>
+      
+    </body>

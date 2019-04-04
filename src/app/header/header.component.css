@@ -1,0 +1,179 @@
+/* You can add global styles to this file, and also import other style files
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: #445649;
+  
+  }
+  
+  input[type=text],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .buttons {
+    align-content: center;
+  }
+  
+  .footer {
+    overflow: hidden;
+    width: 100%;
+    background-color: #f2f2f2;
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+  
+  }
+  
+  .container1 {
+    width: 95%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    padding: 2px 16px;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    bottom: 0;
+    padding-left: 30px;
+    padding-top: 10px;
+    margin-top: 30px;
+    margin-left: 20px;
+  
+  
+  
+  }
+  
+  .img {
+    width: 100%;
+    margin-top: 25px;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+  
+  
+  
+ 
+  .row.content {
+    height: 450px
+  }
+
+  .sidenav {
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height:200%;
+  }
+  
+ 
+  footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+  }
+  
+ 
+  @media screen and (max-width: 767px) {
+    .sidenav {
+      height: auto;
+      padding: 15px;
+    }
+  
+    .row.content {
+      height: auto;
+    }
+  }
+  
+  .affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+    padding-top: 9px;
+  }
+  
+
+  
+  p {
+    font-size: 16px;
+  } */
+  span.num {
+    position: absolute;
+    font-size: 0.6em;
+    top: 1px;
+    color:white;
+  
+    right: 2px;
+  }
+  body{
+    background-color:#FB861D;
+  }
+  .content {
+    margin: 5% 0 0 0%;
+  }
+  .shake {
+    display:inline-block
+    
+  }
+  .shake {
+    display:block;
+    position:relative;
+  }
+  img{
+  display: block;
+  height: 250px;
+  width: 250px;
+  border-radius: 50% 50% 50% 50%;
+  }
+  h2.shake,
+  .shake.inline {
+    display:inline-block
+  }
+  h1,p,h2{
+    color:#FFF;
+  }
+  @-webkit-keyframes spaceboots {
+    0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+    10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+    30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+    40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+    50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+    70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+    80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+    90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+    100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+  }
+  .shake:not(:hover),
+  .shake:focus {
+    -webkit-animation-name: spaceboots;
+    -webkit-animation-duration: 0.8s;
+    -webkit-transform-origin:50% 50%;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+  }

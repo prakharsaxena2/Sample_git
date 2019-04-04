@@ -1,0 +1,51 @@
+{
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "resources": {
+        "files": [
+          "/favicon.ico",
+          "/index.html",
+          "/*.css",
+          "/*.js"
+        ],
+        "urls": [
+          "https://angularfirebase-62dab.firebaseio.com/.json",
+          "https://angularfirebase-62dab.firebaseio.com/Users.json",
+          "https://angularfirebase-62dab.firebaseio.com/category/Bike.json",
+          "https://angularfirebase-62dab.firebaseio.com/category/car.json",
+          "https://angularfirebase-62dab.firebaseio.com/category/mobile.json"
+          
+        ]
+      }
+    }, {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": [
+          "/assets/**",
+          "/*.(eot|svg|cur|jpg|png|webp|gif|otf|ttf|woff|woff2|ani)"
+        ]
+      }
+    }
+  ],
+  "dataGroups":[
+    {
+      "name": "firebase-json",
+      "urls": [
+        "https://angularfirebase-62dab.firebaseio.com/.json",
+        "https://angularfirebase-62dab.firebaseio.com/Users.json",
+        "https://angularfirebase-62dab.firebaseio.com/category/Bike.json",
+        "https://angularfirebase-62dab.firebaseio.com/category/car.json",
+        "https://angularfirebase-62dab.firebaseio.com/category/mobile.json"      ],
+      "cacheConfig":{
+        "strategy":"performance"
+      }
+    }
+  ]
+}
+
+

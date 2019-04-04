@@ -1,0 +1,39 @@
+.block {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #e89c9b;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 12px;
+  }
+
+ 
+  .fa-spin-hover:not(:hover) {
+    animation: none;
+ }
+
+
+/* body { background:#2d2d37 }
+a { color: white; text-decoration: none; } */
+
+.arrow {
+  text-align: center;
+  margin: 8% 0;
+  
+ 
+}
+
+
+
+.x{
+  
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+x:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}

@@ -1,0 +1,44 @@
+<app-header></app-header>
+<div class='container'>
+    
+
+    <!-- <button type="button" class="block"(click)='showfavourate()'><i class="material-icons">favorite</i></button> -->
+
+    <div class="arrow bounce" (click)='showfavourate()'>
+      
+
+        <i class="material-icons">favorite</i>
+     
+      </div>
+
+      
+</div>
+
+
+
+
+<div *ngFor="let item of products2">
+    <div class="card column">
+        <div  class="thumbnail"> 
+      <img src={{item.url}} alt="Avatar" style="width:auto; height:250px">
+      <div class="caption">
+      <div class="container">
+       
+        <h4><b>{{item.name}}</b></h4>
+        <!-- <p>{{item.price }}</p>  -->
+
+
+        <button type="submit" id={{item.id}} routerLink='/details/{{item.id}}'
+        class="learn_btn btn btn-success">view</button>
+     
+        <hr width="100%">
+
+        <!-- <a (click)='deltofav(item.id) ' class="x"><i class="material-icons">highlight_off</i></a>  -->
+        <i class="material-icons fa-2x fa-spin fa-spin-hover"(click)='deltofav(item.id)' >highlight_off</i>
+       
+     
+      </div>  
+    </div>
+      </div>
+    </div>
+  </div>

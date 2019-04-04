@@ -1,0 +1,43 @@
+<body>
+    <div *ngFor="let item of bikes">
+  <div class="row_details">
+   
+    <div class="col-md-8">
+      <div class="resultGiftBox">
+        <div class="row" >
+            <div class="col-md-6">
+                <a>
+                    <img
+                      class="img-responsive"
+                      src={{item.productname}}
+                    />
+                  </a>
+            </div>
+           
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="detail_container" >
+        <div class="row2">
+            <h1>{{item.name}}</h1>
+       
+            <h4>₹  {{item.price }}</h4>
+            
+            <hr>  
+            <!-- <div class="addtocart" (click)="opencomp(product_obj)">
+                <h5>Add to cart</h5>
+            </div>    -->
+        </div>
+        
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<router-outlet></router-outlet>

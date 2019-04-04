@@ -1,0 +1,84 @@
+/* 
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 30%;
+  margin: 20px;
+}
+.container {
+  padding: 2px 16px;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.column {
+  float: left;
+  width: 20%;
+  padding: 20px;
+}
+.catseletor{
+padding-right: 0px
+}
+.serachbar{
+padding-left: 0px;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  opacity: 0;
+  transition: all .2s ease-in-out;
+ }
+ .show-scrollTop {
+  opacity: 1;
+  transition: all .2s ease-in-out;*/
+  body{
+    
+    margin-top: 14px;
+}
+
+
+.maincontainer {
+    padding-bottom: 35px;
+    position: relative;
+    overflow: hidden;
+}
+.card {
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    line-height: 1;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width:auto;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card-body {
+    padding-top: 8px;
+    position: relative;
+}
+.card-title {
+    font-size: 12px;
+    color: #282b30;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-left: 17px;
+    letter-spacing: 0.02em;
+    line-height: 14.5px;
+}
+.card-price {
+    font-family: EuclidFlexLgt;
+    font-size: 11px;
+    margin-left: 17px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    margin-top: 2px;
+}
+
+a{
+    cursor: pointer;
+}
